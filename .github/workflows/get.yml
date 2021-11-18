@@ -13,8 +13,9 @@ jobs:
     steps:
     - name: Download
       run: |
-        curl https://image.thum.io/get/width/1024/crop/768/https://akilar.top/ -o akilar.top.jpg
         curl https://image.thum.io/get/width/1024/crop/768/https://www.boysec.cn/ -o www.boysec.cn.jpg
+        curl https://image.thum.io/get/width/1024/crop/768/https://akilar.top/ -o akilar.top.jpg
+        curl https://image.thum.io/get/width/1024/crop/768/https://www.baidu.com/ -o www.baidu.com.jpg
         curl https://purge.jsdelivr.net/gh/5279314/ScreenShot@gh-pages/*.*
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
